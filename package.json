@@ -25,5 +25,9 @@
   "dependencies": {
     "const": "^1.0.0",
     "define-properties": "^1.2.1"
+  },
+  "devDependencies": {
+    "@10xly/eslint-config": "*",
+    "eslint": "^9.39.3"
   }
 }
