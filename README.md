@@ -1,6 +1,6 @@
 # es-blur
 
-A drop-in shim/polyfill/replacement for `window.blur()` that works as far down as ES3.
+A drop-in shim/polyfill/replacement for `window.blur()`. Sort of follows the es-shims API because why not?
 
 ## Installation
 
@@ -26,7 +26,7 @@ console.log(blur) // Output: [Function: blur]
 If you just want to require the implementation, do this instead:
 
 ```js
-var blur = require('es-blur/implementation')
+var blur = require('es-blur')()
 
 console.log(blur) // Output: [Function: blur]
 ```

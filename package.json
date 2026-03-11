@@ -1,6 +1,6 @@
 {
   "name": "es-blur",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A drop-in shim/polyfill/replacement for `window.blur() that works as far down as ES3.",
   "keywords": [
     "blur",
@@ -23,8 +23,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@10xly/global": "^1.1.1",
+    "@10xly/strict-equals": "^1.0.1",
+    "@not-js/not": "^1.1.1",
     "const": "^1.0.0",
-    "define-properties": "^1.2.1"
+    "define-properties": "^1.2.1",
+    "lodash.stubobject": "^4.13.0",
+    "set-function-name": "^2.0.2",
+    "standard-objects-function": "^1.0.0"
   },
   "devDependencies": {
     "@10xly/eslint-config": "*",

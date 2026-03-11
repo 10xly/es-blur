@@ -1,21 +1,11 @@
-"use strict";
+/* eslint-disable no-var */
 
-var getPolyfill = require("./polyfill");
-var shimHelper = require("./shim-helper");
+var getPolyfill = require("./polyfill")
+var shimHelper = require("./shim-helper")
+var globalObj = require("@10xly/global")
 
 function shim() {
-  try {
-    shimHelper(window, "blur", getPolyfill)();
-  } catch {}
-  try {
-    shimHelper(global, "blur", getPolyfill)();
-  } catch {}
-  try {
-    shimHelper(self, "blur", getPolyfill)();
-  } catch {}
-  try {
-    shimHelper(globalThis, "blur", getPolyfill)();
-  } catch {}
+  shimHelper(globalObj, require("./name"), getPolyfill)()
 }
 
-module.exports = shim;
+module.exports = shim
